@@ -24,15 +24,15 @@ end;
 
 function Confirmar(Mensagem: string): Boolean;
 begin
-   Result := MessageDlg(Mensagem, mtConfirmation, [mbYes, mbCancel], 0) = mrYes;
+    Result := MessageDlg(Mensagem, mtConfirmation, [mbYes, mbCancel], 0) = mrYes;
 end;
 
 function LerInteiroPositivo(Titulo: string): Integer;
 var
-  sNumero: string;
+    sNumero: string;
 begin
-  sNumero := InputBox(Titulo, 'Digite o número', '');
-  Result := StrToIntDef(sNumero, 0);
+    sNumero := InputBox(Titulo, 'Digite o número', '');
+    Result := StrToIntDef(sNumero, 0);
 end;
 
 

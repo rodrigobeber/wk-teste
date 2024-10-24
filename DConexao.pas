@@ -38,8 +38,8 @@ const nomeArquivoIni = 'WKTeste.ini';
 
 function TdmConexao.Conectar(AMensagemErro: String): Boolean;
 var
-   IniFile: TMemIniFile;
-   CaminhoArquivoIni: String;
+    IniFile: TMemIniFile;
+    CaminhoArquivoIni: String;
 begin
 
     Result := False;
@@ -83,10 +83,10 @@ function TdmConexao.GetDataHora: TDateTime;
 begin
     with qryDataHoraServidor do
     begin
-       Open;
-       Result := Fields[0].AsDateTime;
-       Close;
-   end;
+        Open;
+        Result := Fields[0].AsDateTime;
+        Close;
+    end;
 end;
 
 end.

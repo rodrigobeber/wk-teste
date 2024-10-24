@@ -105,7 +105,8 @@ begin
                 UUtilDialogs.ExibirErro('Erro excluindo pedido: ' + MensagemErro)
             else
                 UUtilDialogs.ExibirInfo(Format('Pedido %d excluído com sucesso', [NumeroPedido]));
-        end else
+        end
+        else
             UUtilDialogs.ExibirInfo('Operação cancelada. O pedido NÃO foi excluído');
         dmPedidos.LimparDataSets;
         Estado := estVazio;
@@ -258,9 +259,9 @@ end;
 // auto-dimensiona a coluna para que a coluna com a descrição do produto seja auto-dimensionável
 procedure TfrPedidos.FormResize(Sender: TObject);
 var
-  IndiceColunaDescricao: Integer;
-  TotalLarguraFixa: Integer;
-  LarguraColunaDescricao: Integer;
+    IndiceColunaDescricao: Integer;
+    TotalLarguraFixa: Integer;
+    LarguraColunaDescricao: Integer;
 begin
     IndiceColunaDescricao := 1;
 
@@ -268,7 +269,7 @@ begin
     for var i := 0 to dbgrdProdutos.Columns.Count - 1 do
     begin
         if dbgrdProdutos.Columns[i].FieldName <> 'ds_produto_descricao' then
-           TotalLarguraFixa := TotalLarguraFixa + dbgrdProdutos.Columns[i].Width;
+            TotalLarguraFixa := TotalLarguraFixa + dbgrdProdutos.Columns[i].Width;
     end;
 
     LarguraColunaDescricao := dbgrdProdutos.Width - TotalLarguraFixa - 50; // Ajuste para bordas e margens
@@ -302,7 +303,8 @@ begin
 
     if FEstado = estBrowse then
        dbedCodigoProduto.SetFocus
-    else if FEstado = estVazio then
+    else
+    if FEstado = estVazio then
     begin
         edCodigoCliente.Text := '';
         edCodigoCliente.SetFocus;

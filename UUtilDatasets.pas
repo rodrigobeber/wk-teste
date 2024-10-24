@@ -89,7 +89,7 @@ end;
 
 procedure CopiarCampos(AOrigem, ADestino: TDataSet; ACampos: array of string);
 var
-  i: Integer;
+   i: Integer;
 begin
     for i := Low(ACampos) to High(ACampos) do
     begin

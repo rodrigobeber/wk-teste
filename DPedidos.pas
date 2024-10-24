@@ -197,8 +197,8 @@ begin
             NumeroPedido := InserirPedido
         else
         begin
-             AtualizarPedido;
-             NumeroPedido := qryPedidonr_pedido.AsInteger;
+            AtualizarPedido;
+            NumeroPedido := qryPedidonr_pedido.AsInteger;
         end;
         fdTransaction.Commit;
         Result := '';
@@ -273,10 +273,10 @@ begin
         begin
             if FieldByName('id').AsInteger > 0 then
                 dmExecSQL.ExecSQL(SQLUpdatePedidoProduto, [
-                   FieldByName('nr_quantidade').Value,
-                   FieldByName('vl_unitario').value,
-                   FieldByName('vl_total').value,
-                   FieldByName('id').AsInteger
+                    FieldByName('nr_quantidade').Value,
+                    FieldByName('vl_unitario').value,
+                    FieldByName('vl_total').value,
+                    FieldByName('id').AsInteger
                 ])
             else
                 dmExecSQL.ExecSQL(SQLInsertPedidoProduto, qryPedidoProdutos, camposInsertProduto);

@@ -10,8 +10,8 @@ implementation
 
 procedure FocarPrimeiroCampoVazio(const AEdits: array of TCustomEdit);
 var
-   i: Integer;
-   Edit: TCustomEdit;
+    i: Integer;
+    Edit: TCustomEdit;
 begin
     for i := Low(AEdits) to High(AEdits) do
     begin

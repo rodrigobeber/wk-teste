@@ -53,12 +53,13 @@ begin
     dmProdutos.CarregarProdutos;
     if not Assigned(dmPedidos) then
     begin
-       dmPedidos := TdmPedidos.Create(Self);
-       frPedidos := TfrPedidos.Create(Self);
-    end else
+        dmPedidos := TdmPedidos.Create(Self);
+        frPedidos := TfrPedidos.Create(Self);
+    end
+    else
     begin
-       // caso esteja minimizado
-       frPedidos.WindowState := wsNormal;
+        // caso esteja minimizado
+        frPedidos.WindowState := wsNormal;
     end;
 end;
 
