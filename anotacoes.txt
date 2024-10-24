@@ -1,0 +1,32 @@
+5. Para informar o produto na tela do pedido de vendas, o operador deve digitar:
+código do produto, quantidade e valor unitário
+
+
+6. À medida que o operador digita os produtos e confirma, eles devem ir entrando
+em um grid para visualização. Deve existir um botão para inserir o produto no grid
+
+
+7. O grid deve apresentar: código do produto, descrição do produto, quantidade, vlr. unitário e vir. Total
+8. Deve ser possivel navegar pelo grid com seta para cima seta pra baixo
+9. Utilizar o mesmo botão de inserir para confirmar e atualizar
+10. DEL sobre um produto para apagá-lo. Perguntar ao operador se realmente deseja apagá-lo
+
+12. Exibir no rodapé da tela o valor total do pedido
+
+13. Incluir botão GRAVAR PEDIDO. Quando acionado, o sistema deve gravar 2 tabelas
+(dados gerais do pedido e produtos do pedido)
+
+16. Utilizar transação e tratar possíveis erros
+
+22. Criar botão na tela de pedidos, que deve ficar visível quando o código do cliente
+estiver em branco, para carregar pedidos já gravados. Solicitar (número do pedido) e
+carregar o cliente e os produtos 
+
+23. Criar botão na tela de pedidos, que deve ficar visível quando o código do cliente
+estiver em branco, para cancelar um pedido. Solicitar (número do pedido) e apagar
+as duas tabelas.
+
+6. Disponibilize o DUMP do banco de dados no diretório raiz do projeto
+
+8. Publique seu teste no GITHub, ou em outro repositório de código, e deixe o
+repositório público, enviando o link para o departamento de RH da WK Technology
