@@ -10,7 +10,7 @@ A aplicação foi desenvolvida utilizando a seguinte tecnologia:
 
 ## Arquivo .ini
 
-O arquivo .ini deve ficar no mesmo diretório do arquivo .EXE
+O arquivo .ini deve-se chamar 'WKTeste.ini' e ficar no mesmo diretório do arquivo .EXE
 
 ## Exemplo de .ini
 

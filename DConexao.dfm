@@ -19,14 +19,14 @@ object dmConexao: TdmConexao
   end
   object fdWaitCursor: TFDGUIxWaitCursor
     Provider = 'Forms'
-    Left = 224
-    Top = 168
+    Left = 144
+    Top = 176
   end
   object qryDataHoraServidor: TFDQuery
     Connection = fdConexao
     SQL.Strings = (
       'select current_timestamp ')
-    Left = 344
-    Top = 160
+    Left = 288
+    Top = 176
   end
 end
