@@ -1,6 +1,8 @@
--- Obs.: As FKs já contém índices próprios
+-- Obs.: As PKs e FKs já contém índices próprios
 
--- create database wk;
+create database wk;
+
+use wk;
 
 CREATE TABLE clientes (
     cd_cliente INT PRIMARY KEY,
